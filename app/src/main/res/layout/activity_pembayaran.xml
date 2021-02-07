@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundbright"
+    tools:context=".Kasir.PembayaranActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_margin="10sp"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@drawable/logo"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_marginTop="25sp"
+        android:text="@string/tiga_dara_ncoffe_kitchen"
+        android:layout_toRightOf="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/btnLogoutPelayan"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAIL PESANAN"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="5dp"/>
+
+    <View
+        android:id="@+id/tv1"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="@color/brown"/>
+
+    <TextView
+        android:id="@+id/tvAtasNamaBayar"
+        android:layout_below="@id/tv1"
+        android:text="SANUSI"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPembayaran"
+        android:padding="10sp"
+        android:layout_below="@id/tvAtasNamaBayar"
+        android:layout_above="@+id/tvTot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvTot"
+        android:layout_above="@+id/tvTotalBayarKasir"
+        android:gravity="center"
+        android:text="TOTAL BAYAR"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvTotalBayarKasir"
+        android:background="@drawable/shadow"
+        android:layout_above="@id/tvBayar"
+        android:text="Rp. 100.000,-"
+        android:padding="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginRight="50sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvBayar"
+        android:layout_above="@+id/etBayar"
+        android:gravity="center"
+        android:text="BAYAR"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etBayar"
+        android:background="@drawable/shadow"
+        android:hint="Masukkan Jumalah Bayar"
+        android:inputType="number"
+        android:padding="18sp"
+        android:gravity="center"
+        android:layout_marginRight="50sp"
+        android:layout_marginLeft="50sp"
+        android:layout_above="@+id/btnBayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnBayar"
+        android:text="bayar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:background="@drawable/custom_button4"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

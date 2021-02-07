@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundbright"
+    tools:context=".Dapur.DapurDetail">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_margin="10sp"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@drawable/logo"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_marginTop="25sp"
+        android:text="@string/tiga_dara_ncoffe_kitchen"
+        android:layout_toRightOf="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/btnLogoutPelayan"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAIL PESANAN"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="5dp"/>
+
+    <View
+        android:id="@+id/tv1"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="@color/brown"/>
+
+    <TextView
+        android:id="@+id/tvAtasNamaBayarDapur"
+        android:layout_below="@id/tv1"
+        android:text="SANUSI"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDapur"
+        android:padding="10sp"
+        android:layout_below="@id/tvAtasNamaBayarDapur"
+        android:layout_above="@+id/btnSelesai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnSelesai"
+        android:text="selesai"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:background="@drawable/custom_button4"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

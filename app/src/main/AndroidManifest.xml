@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Pelayan.SelesaiDetailActivity"></activity>
+        <activity android:name=".Admin.LaporanDetailActivity" />
+        <activity android:name=".Dapur.DapurDetail" />
+        <activity android:name=".Kasir.KemnalianActivity" />
+        <activity android:name=".Kasir.PembayaranActivity" />
+        <activity android:name=".Pelayan.CartActivity" />
+        <activity android:name=".Admin.AddUserActivity" />
+        <activity android:name=".Pelayan.HomePelayan" />
+        <activity android:name=".Kasir.HomeKasir" />
+        <activity android:name=".Dapur.HomeDapur" />
+        <activity android:name=".Admin.HomeAdmin" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

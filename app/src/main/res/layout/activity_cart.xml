@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundbright"
+    tools:context=".Pelayan.CartActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_margin="10sp"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@drawable/logo"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_marginTop="25sp"
+        android:text="@string/tiga_dara_ncoffe_kitchen"
+        android:layout_toRightOf="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/btnLogoutPelayan"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DETAIL PESANAN"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="5dp"/>
+
+    <View
+        android:id="@+id/tv1"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="@color/brown"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/notrans"-->
+<!--        android:layout_below="@id/tv1"-->
+<!--        android:text="P-coba"-->
+<!--        android:layout_margin="10sp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCart"
+        android:padding="10sp"
+        android:layout_below="@id/tv1"
+        android:layout_above="@+id/btnNoMeja"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnNoMeja"
+        android:layout_above="@+id/rl"
+        android:layout_margin="10sp"
+        android:background="@drawable/custom_button4"
+        android:textColor="@color/white"
+        android:text="no. meja"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_toRightOf="@+id/btnNoMeja"
+        android:layout_above="@id/rl"
+        android:layout_margin="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_above="@+id/btnKonfirmasi"
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvAtasNama"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="ATASNAMA"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etAtasNama"
+            android:layout_toRightOf="@id/tvAtasNama"
+            android:layout_alignParentRight="true"
+            android:hint="Atasnama"
+            android:textColorHint="@color/black"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvTotalBayartext"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="TOTAL BAYAR"
+            android:layout_below="@+id/etAtasNama"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvTotalBayar"
+            android:layout_toRightOf="@id/tvTotalBayartext"
+            android:layout_below="@id/etAtasNama"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10sp"
+            android:gravity="end"
+            android:text="Rp. 20000 ,-"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnKonfirmasi"
+        android:text="konfirmasi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/custom_button4"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

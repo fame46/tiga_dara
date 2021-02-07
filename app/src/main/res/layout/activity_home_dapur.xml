@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundbright"
+    tools:context=".Dapur.HomeDapur">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_margin="10sp"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@drawable/logo"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_marginTop="25sp"
+        android:text="@string/tiga_dara_ncoffe_kitchen"
+        android:layout_toRightOf="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_margin="10sp"
+        android:id="@+id/btnLogoutDapur"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#1affffff"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_exit_to_app_24"/>
+
+    <ImageView
+        android:layout_margin="10sp"
+        android:id="@+id/btnRefreshDapur"
+        android:layout_toLeftOf="@id/btnLogoutDapur"
+        android:layout_alignParentTop="true"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="#1affffff"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_refresh_24"/>
+
+    <View
+        android:id="@+id/tv1"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="@color/brown"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDapur"
+        android:layout_below="@id/tv1"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_look"
+        android:icon="@drawable/ic_baseline_remove_red_eye_24"
+        android:title="Lihat Menu" />
+
+    <item
+        android:id="@+id/navigation_upload"
+        android:icon="@drawable/ic_baseline_cloud_upload_24"
+        android:title="Tambah Menu" />
+
+    <item
+        android:id="@+id/navigation_meja"
+        android:icon="@drawable/ic_baseline_airline_seat_recline_normal_24"
+        android:title="Nomor Meja" />
+
+    <item
+        android:id="@+id/navigation_kasir"
+        android:icon="@drawable/ic_baseline_account_box_24"
+        android:title="User" />
+    <item
+        android:id="@+id/navigation_laporan"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="Laporan" />
+
+</menu>

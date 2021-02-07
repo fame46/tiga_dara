@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kasir.KemnalianActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20sp"
+        android:text="UANG KEMBALIAN"
+        android:gravity="center"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvUangKembalian"
+        android:layout_below="@id/tv1"
+        android:text="Rp. 3000,-"
+        android:gravity="center"
+        android:textColor="@color/brown"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/tv2"
+        android:layout_marginTop="5sp"
+        android:layout_below="@id/tvUangKembalian"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="@color/brown"/>
+
+    <TextView
+        android:id="@+id/tvAtasNamaKembalian"
+        android:layout_below="@id/tv2"
+        android:text="SANUSI"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewKembalian"
+        android:padding="10sp"
+        android:layout_below="@id/tvAtasNamaKembalian"
+        android:layout_above="@+id/btnReprint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btnReprint"
+        android:text="reprint"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_above="@id/btnOke"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:background="@drawable/custom_button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnOke"
+        android:text="OKE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:background="@drawable/custom_button4"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

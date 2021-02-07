@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.UploadMakananFragment">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageView"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20sp"
+        android:src="@drawable/logo"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:background="@drawable/border2"
+        android:layout_margin="20sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="205sp"
+        android:layout_height="205sp"/>
+
+    <TextView
+        android:id="@+id/btnImport"
+        android:paddingTop="10sp"
+        android:paddingBottom="12sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:text="Import file"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="-10sp"
+        android:textColor="@color/black"
+        android:background="@drawable/shadow2"
+        android:layout_below="@id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <EditText
+        android:id="@+id/etNamaMenu"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginLeft="50sp"
+        android:hint="Nama Menu"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/btnImport"
+        android:layout_width="match_parent"
+        android:paddingLeft="15sp"
+        android:background="@drawable/shadow"
+        android:layout_height="60sp"/>
+
+    <EditText
+        android:id="@+id/etHargaMenu"
+        android:layout_marginRight="50sp"
+        android:layout_marginLeft="50sp"
+        android:hint="Harga Menu"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/etNamaMenu"
+        android:layout_width="match_parent"
+        android:paddingLeft="15sp"
+        android:background="@drawable/shadow"
+        android:layout_height="60sp"/>
+
+    <Button
+        android:id="@+id/btnSaveMenu"
+        android:background="@drawable/custom_button2"
+        android:text="+"
+        android:layout_below="@id/etHargaMenu"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:layout_marginTop="15sp"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
